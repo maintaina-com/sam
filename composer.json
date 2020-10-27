@@ -1,7 +1,7 @@
 {
     "name": "horde/sam",
     "description": "Anti-spam user preferences application",
-    "type": "project",
+    "type": "horde-application",
     "homepage": "https://www.horde.org",
     "license": "GPL-2.0",
     "authors": [
@@ -12,22 +12,20 @@
         }
     ],
     "version": "1.0.0alpha1",
-    "time": "2017-11-11",
+    "time": "2020-10-27",
     "repositories": [
         {
-            "type": "pear",
-            "url": "https://pear.horde.org"
+            "type": "composer",
+            "url": "https://horde-satis.maintaina.com"
         }
     ],
     "require": {
+        "horde/horde-installer-plugin": "dev-master",
         "php": "^5.3 || ^7",
-        "pear-pear.horde.org/horde": "^5",
-        "pear-pear.horde.org/Horde_Core": "^2"
+        "horde/horde": "dev-master",
+        "horde/core": "dev-master"
     },
-    "replace": {
-        "pear-pear.horde.org/sam": "1.*",
-        "pear-horde/sam": "1.*"
-    },
+    "suggest": {},
     "autoload": {
         "psr-0": {
             "Sam": "lib/"
